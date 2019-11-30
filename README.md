@@ -4,7 +4,7 @@ The code above was used for a Telegram bot during an event in a group, [@whateve
 This bot uses the [python-telegram-bot](https://github.com/python-telegram-bot/python-telegram-bot) library.
 
 ## About
-This event was created for Halloween. There were 3 sub-events, where players spent one day collecting candy corn through playing games. At the end of the day, the event narrator, [@snailandstars](https://t.me/snailandstars), announced that the candy corn has formed a monster, aptly nicknamed the "candy corn monster". The players then spent the next 2 days playing games to deal damage to the monster to bring its health points down to 0. (Note: The players did not know how many health points the monster had, and the group admins planned to make it dynamic, to suit the activity in the group) On the fourth day, the players played games to collect a 1000 rune tags collectively to seal the monster away.
+This event was created for Halloween. There were 3 sub-events, where players spent one day collecting candy corn through playing games. At the end of the day, the event narrator, [@snailandstars](https://t.me/snailandstars), announced that the candy corn has formed a monster, aptly nicknamed the "candy corn monster". The players then spent the next 2 days playing games to deal damage to the monster to bring its health points down to 0. (Note: The players did not know how many health points the monster had, and the group admins planned to make it dynamic, to suit the activity in the group) On the fourth day, the players played games to collect 1000 rune tags collectively to seal the monster away.
 
 ## Bot functions
 ###### connect_candy_corn / connect_damage / connect_rune_tag
@@ -26,7 +26,7 @@ This function allowed the admins to create a new player entry in the database ma
 This function allowed the admins to add the scores of a player manually in the log group, since some players' ID's cannot be read from the end-game messages due to their privacy settings.
 
 ###### health
-This function allowed the admins in the log group to check the health of the monster by sending "/health" or to add or subtract health points from the monster by sending "/health [integer]"
+This function allowed the admins in the log group to check the health of the monster by sending "/health" or to add or subtract health points from the monster by sending "/health [integer]".
 
 ## Special thanks
 This event could not have been executed successfully without the help of the event and general group admins, Pandora and Anonymous, and [Fallen Angel](https://t.me/maykurasaki). 
