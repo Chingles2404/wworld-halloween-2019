@@ -378,4 +378,34 @@ def update_rune_tag(update, context):
 update_rune_tag_handler = CommandHandler('update_rune_tag', update_rune_tag)
 dispatcher.add_handler(update_rune_tag_handler)
 
+
+
+# check the health of the monster or add/minus health points from the monster
+def health(update, context):
+    if update.message.chat.id == -1001211150863:
+        text = update.message.text
+        text = text.split(" ")
+        connection = sqlite3.connect("players.db")
+        if len(text) == 1:
+            cursor = connection.execute("SELECT HP FROM Monster")
+            cursor_player = connection.execute("SELECT Name, Damage FROM Player ORDER BY Damage DESC")
+            players = cursor_player.fetchall()
+            total = 0
+            for value in players:
+                total += value[1]
+            hp = cursor.fetchall()
+            hp = hp[0][0]
+            context.bot.send_message(chat_id=update.effective_chat.id, text="Current HP: " + str(hp - total))
+        else:
+            cursor = connection.execute("SELECT HP FROM Monster")
+            hp = cursor.fetchall()
+            hp = hp[0][0]
+            new_hp = hp + int(text[1])
+            connection.execute("UPDATE Monster SET HP = ? WHERE HP = ?", (new_hp, hp))
+            connection.commit()
+            connection.close()
+            context.bot.send_message(chat_id=update.effective_chat.id, text="HP updated!\n\nOld HP: " + str(hp) + "\nNew HP: " + str(new_hp))
+health_handler = CommandHandler('health', health)
+dispatcher.add_handler(health_handler)
+
 updater.start_polling()
