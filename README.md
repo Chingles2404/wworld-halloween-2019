@@ -4,7 +4,7 @@ The code above was used for a Telegram bot during an event in a group, [@whateve
 This bot uses the [python-telegram-bot](https://github.com/python-telegram-bot/python-telegram-bot) library.
 
 ## About
-This event was created for Halloween. There were 3 sub-events, where players spent one day collecting candy corn through playing games. At the end of the day, the event narrator, [@snailandstars](https://t.me/snailandstars), announced that the candy corn has formed a monster, aptly nicknamed the "candy corn monster". The players then spent the next 2 days playing games to deal damage to the monster to bring its health points down to 0. (Note: The players did not know how many health points the monster had, and the group admins planned to make it dynamic, to suit the activity in the group) On the fourth day, the players played games to collect 1000 rune tags collectively to seal the monster away.
+This event was created for Halloween. There were 3 sub-events, where players spent one day collecting candy corn through playing games. At the end of the day, the event narrator, [@snailsandstars](https://t.me/snailsandstars), announced that the candy corn has formed a monster, aptly nicknamed the "candy corn monster". The players then spent the next 2 days playing games to deal damage to the monster to bring its health points down to 0. (Note: The players did not know how many health points the monster had, and the group admins planned to make it dynamic, to suit the activity in the group) On the fourth day, the players played games to collect 1000 rune tags collectively to seal the monster away.
 
 ## Bot functions
 ###### connect_candy_corn / connect_damage / connect_rune_tag
