@@ -29,4 +29,4 @@ This function allowed the admins to add the scores of a player manually in the l
 This function allowed the admins in the log group to check the health of the monster by sending "/health" or to add or subtract health points from the monster by sending "/health [integer]".
 
 ## Special thanks
-This event could not have been executed successfully without the help of the event and general group admins, Pandora and Anonymous, and [Fallen Angel](https://t.me/maykurasaki). 
+This event could not have been executed successfully without the help of the event and general group admins, Pandora and Anonymous, [DLC](https://t.me/edgypancake) and [Fallen Angel](https://t.me/maykurasaki). 
