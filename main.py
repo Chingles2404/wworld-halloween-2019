@@ -10,7 +10,7 @@ dispatcher = updater.dispatcher
 
 # various connections to database to add the various points from @werewolfbot's end-game message
 def connect_candy_corn(name, userid, candy_corn):
-    connection = sqlite3.connect("test.db")
+    connection = sqlite3.connect("players.db")
     check = connection.execute("SELECT ID FROM Player")
     check = check.fetchall()
     if (userid,) in check:
